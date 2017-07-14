@@ -1,32 +1,35 @@
 package com.example.praveenmax.myfirstapp;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.EditText;
 
+/**
+ * This activity displays all the demos in this app
+ */
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+{
+    private RecyclerView rv_ActivityList;
+    private RecyclerView.Adapter rvAdapter;
 
-
-    public static final String EXTRA_MESSAGE = "praveenmax.MESSAGE";
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.activity_main);
-    }
-
-    //Called when the user taps send button
-    public void sendMessage(View view)
+    protected void onCreate(Bundle bundle)
     {
-        Intent intent = new Intent(this, DisplayMessageActivity.class);
-        EditText et= (EditText)findViewById(R.id.editText);
-        String message = et.getText().toString();
+        super.onCreate(bundle);
 
-        intent.putExtra(EXTRA_MESSAGE, message);
-        startActivity(intent);
+        setContentView(R.layout.main_recyclerviewtest);
+
+        rv_ActivityList = (RecyclerView)findViewById(R.id.rv_activity_items);
+
+        //set the layout manager
+        rv_ActivityList.setLayoutManager(new LinearLayoutManager(this));
+
+        //set the adapter
+        rv_ActivityList.setAdapter(new MyActivityListAdapter());
+
     }
+
 }
+
