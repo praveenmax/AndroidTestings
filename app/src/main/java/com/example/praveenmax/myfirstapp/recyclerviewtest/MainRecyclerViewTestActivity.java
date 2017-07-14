@@ -15,7 +15,7 @@ public class MainRecyclerViewTestActivity extends Activity {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter rvAdapter;
     private RecyclerView.LayoutManager rvLayoutManager;
-    private String[] mydatasets={"praveen","1","2","3","4","5","6","7","8","9","10","11","12"};
+    private String[] mydatasets=new String[100];
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -33,6 +33,11 @@ public class MainRecyclerViewTestActivity extends Activity {
         rvAdapter = new TestAdapter(mydatasets);
         recyclerView.setAdapter(rvAdapter);
 
+
+        for(int i=0;i<100;i++)
+        {
+            mydatasets[i]=" Data : "+i;
+        }
     }
 
 }
