@@ -19,6 +19,7 @@
         <activity android:name=".activityswitcher.DisplayMessageActivity" android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".fragments.MainFragmentActivity" android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".recyclerviewtest.MainRecyclerViewTestActivity" android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".sharedpref.MainSharedPrefActivity" android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>

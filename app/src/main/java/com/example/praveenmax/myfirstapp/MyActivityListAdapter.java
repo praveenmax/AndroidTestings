@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.example.praveenmax.myfirstapp.activityswitcher.MainActivitySwitcher;
 import com.example.praveenmax.myfirstapp.fragments.MainFragmentActivity;
 import com.example.praveenmax.myfirstapp.recyclerviewtest.MainRecyclerViewTestActivity;
+import com.example.praveenmax.myfirstapp.sharedpref.MainSharedPrefActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,11 +28,13 @@ public class MyActivityListAdapter extends RecyclerView.Adapter<MyActivityListAd
 
     public List<ActivityListModel> activityList = new ArrayList<>();
 
+    //Add new classes here
     public MyActivityListAdapter()
     {
         activityList.add(new ActivityListModel(MainFragmentActivity.class, "Fragment Test"));
         activityList.add(new ActivityListModel(MainActivitySwitcher.class, "ActivitySwitcher Test"));
         activityList.add(new ActivityListModel(MainRecyclerViewTestActivity.class, "RecyclerView Test"));
+        activityList.add(new ActivityListModel(MainSharedPrefActivity.class, "SharedPref Test"));
     }
 
     //Custom viewholder class.
