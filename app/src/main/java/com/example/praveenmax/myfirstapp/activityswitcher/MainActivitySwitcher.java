@@ -30,5 +30,6 @@ public class MainActivitySwitcher extends AppCompatActivity {
 
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
+        finish();
     }
 }
