@@ -1,7 +1,6 @@
 package com.example.praveenmax.myfirstapp.fragments;
 
 import android.app.Activity;
-import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.app.Fragment;
 import android.os.Bundle;
@@ -15,7 +14,7 @@ public class MainFragmentActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_fragment);
+        setContentView(R.layout.main_fragment);
     }
 
     /*

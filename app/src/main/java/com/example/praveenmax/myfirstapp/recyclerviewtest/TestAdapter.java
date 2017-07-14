@@ -1,15 +1,17 @@
-package com.example.praveenmax.myfirstapp;
+package com.example.praveenmax.myfirstapp.recyclerviewtest;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.praveenmax.myfirstapp.R;
+
 /**
  * Created by PraveenMax on 04-07-2017.
  */
 
-public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>
+public class TestAdapter extends RecyclerView.Adapter<TestAdapter.MyViewHolder>
 {
     private String[] datasets;
 
@@ -48,7 +50,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>
         }
     }
 
-    public MyAdapter(String[] datasets)
+    public TestAdapter(String[] datasets)
     {
         this.datasets = datasets;
     }

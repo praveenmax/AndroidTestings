@@ -1,4 +1,4 @@
-package com.example.praveenmax.myfirstapp;
+package com.example.praveenmax.myfirstapp.recyclerviewtest;
 
 /**
  * Created by PraveenMax on 04-07-2017.
@@ -8,7 +8,9 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-public class MyRecyclerViewActivity extends Activity {
+import com.example.praveenmax.myfirstapp.R;
+
+public class MainRecyclerViewTestActivity extends Activity {
 
     private RecyclerView recyclerView;
     private RecyclerView.Adapter rvAdapter;
@@ -20,7 +22,7 @@ public class MyRecyclerViewActivity extends Activity {
     {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.myrecyclerviewlayout);
+        setContentView(R.layout.myrecyclerviewtestlayout);
         recyclerView = (RecyclerView)findViewById(R.id.rv_numbers);
 
         //set the layout manager
@@ -28,7 +30,7 @@ public class MyRecyclerViewActivity extends Activity {
         recyclerView.setLayoutManager(rvLayoutManager);
 
         //set the adapter for the recycler view
-        rvAdapter = new MyAdapter(mydatasets);
+        rvAdapter = new TestAdapter(mydatasets);
         recyclerView.setAdapter(rvAdapter);
 
     }
