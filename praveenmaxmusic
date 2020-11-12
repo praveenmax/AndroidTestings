@@ -1,7 +1,7 @@
 {
-"app_version":"1.0.0",
+"app_version":"1.0.1",
 "banner_title":"New Update Available!",
-"banner_content":"Update Information:\n1.Fixed Icon issue in some older Android versions.\n2.Added Keyboard songs.\n3.Ability to zoom music notes.",
+"banner_content":"Update Info:\n1.Added New Songs\n  •96-Kaathalae Kaathalae\n  •BSB-As Long As You Love Me\n  •Bach-Minuet\n  •NGK-Anbae Peranbae\n",
 "banner_url":"",
 "testers":[" "]
 }
